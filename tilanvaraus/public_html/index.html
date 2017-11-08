@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>XAMK tilanvaraus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- 4 tuuman näyttö = min. 320 screen width -->
+        <!-- NOTE: Normalize.css eri selaimille soveltumista parantamiseksi! -->
+        
+        <div class="container-fluid theme-showcase" role="main"></div>
+        
+            <div class="row justify-content-center" id="header" style="width:auto;border:1px solid black;height:100px;">
+
+                <div id="logokuva" class="col-sm-4 container" style="float:left;">
+                    <img class="img-thumbnail" src="/" alt="Logo"  style="width:auto;height:80px;float:left;border:1px solid black;margin-left:20px;margin-top:10px;">
+                </div>
+
+                <div id="otsikko" class="col-sm-4 container" style="text-align:center;border:1px solid black;height:100px;">
+                    
+                    
+                    <div style="margin-top:30px">
+                        <b style="text-align:center;font-size:20px;margin:0;">XAMK TILANVARAUS</b>
+                    </div>
+
+                </div>
+
+                <div id="english-button" class="col-sm-4 container" style="float:left;">
+
+                    <button class="btn btn-default" id="engNappi" style="width:auto;height:80px;float:right;border:1px solid black;margin-right:20px;margin-top:10px;"><b id="nappiteksti">In English</b></button>
+
+                </div>
+
+            </div>
+        
+        <div class="container" id="subheader" style="width:auto;border:1px solid black;height:100px;">
+            
+            <h1 style="text-align:center;"><b>Ravintola- ja tilapalvelut</b></h1>
+            
+        </div>
+        
+        <div class="container" id="mainylateksti" style="width:auto;border:1px solid black;height:150px;">
+            
+            <div class="container-fluid" id="tekstiotsikko" style="text-align:center;clear:both;">
+                
+                <h1><b>Monipuoliset tilat Mikkelissä</b></h1>
+                
+            </div>
+            
+            <div class="container-fluid" id="tekstisisalto" style="text-align:center;clear:both;">
+                
+                <p style="font-size:20px;">Tekstiä tekstiä kaikesta jännästä</p>
+                
+            </div>
+            
+        </div>
+        
+        <div class="container" id="main-content" style="width:auto; border:1px solid black;">
+            
+            <div class="row justify-content-center" style="border:1px solid black; margin-top:20px;">
+                
+                
+                
+                <div class="col-2" style="border:1px solid black; height:300px; margin-bottom:20px;">
+                    
+                    <div class="col-sm-4" style="border:1px solid black; height:300px; float:left; margin-left:15%;">
+                        
+                        <div class="col-sm-12" id="sisaltoOtsikko1" style="height:100px; float:left; border:1px solid black; margin:0;padding:0;">
+                                
+                            <h1 style="text-align:center;">Sisältö 1</h1>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12" id="sisalto1" style="max-height:190px; float:left; border:1px solid black; margin-top:10px; padding:0; text-align:center;">
+                                
+                            <b style="text-align:center;">Tilan tietoja lyhyesti <br/> Blabla <br/> Blabla <br/> blabla</b>
+                            <br/><br/><br/>
+                            <button class="btn btn-default" type="button" onclick="">Näytä lisää <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="col-sm-4" style="border:1px solid black; height:300px; float:right; margin-right:15%;">
+                        
+                        <div class="col-sm-12" id="sisaltoOtsikko2" style="height:100px; float:left; border:1px solid black; margin:0;padding:0;">
+                                
+                            <h1 style="text-align:center;">Sisältö 2</h1>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12" id="sisalto2" style="max-height:190px; float:left; border:1px solid black; margin-top:10px; padding:0; text-align:center;">
+                                
+                            <b style="text-align:center;">Tilan tietoja lyhyesti <br/> Blabla <br/> Blabla <br/> blabla</b>
+                            <br/><br/><br/>
+                            <button class="btn btn-default" type="button" onclick="">Näytä lisää <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="col-2" style="border:1px solid black; height:300px;">
+                    
+                    <div class="col-sm-4" style="border:1px solid black; height:300px; float:left; margin-left:15%;">
+                        
+                        <div class="col-sm-12" id="sisaltoOtsikko3" style="height:100px; float:left; border:1px solid black; margin:0;padding:0;">
+                                
+                            <h1 style="text-align:center;">Sisältö 3</h1>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12" id="sisalto3" style="max-height:190px; float:left; border:1px solid black; margin-top:10px; padding:0; text-align:center;">
+                                
+                            <b style="text-align:center;">Tilan tietoja lyhyesti <br/> Blabla <br/> Blabla <br/> blabla</b>
+                            <br/><br/><br/>
+                            <button class="btn btn-default" type="button" onclick="">Näytä lisää <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-sm-4" style="border:1px solid black; height:300px; float:right; margin-right:15%;">
+                        
+                        <div class="col-sm-12" id="sisaltoOtsikko4" style="height:100px; float:left; border:1px solid black; margin:0;padding:0;">
+                                
+                            <h1 style="text-align:center;">Sisältö 4</h1>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12" id="sisalto4" style="max-height:190px; float:left; border:1px solid black; margin-top:10px; padding:0; text-align:center;">
+                                
+                            <b style="text-align:center;">Tilan tietoja lyhyesti <br/> Blabla <br/> Blabla <br/> blabla</b>
+                            <br/><br/><br/>
+                            <button class="btn btn-default" type="button" onclick="">Näytä lisää <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                
+                
+            </div>
+            
+            
+        </div>
+
+        
+        
+        
+        
+        
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

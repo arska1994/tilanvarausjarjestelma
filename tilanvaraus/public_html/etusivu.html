@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XAMK tilanvaraus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- 4 tuuman näyttö = min. 320 screen width -->
+        <!-- NOTE: Normalize.css eri selaimille soveltumista parantamiseksi! -->
+        
+        <div class="container-fluid theme-showcase" role="main">
+            
+            <div class="row justify-content-center" id="header" style="width:auto;border:1px solid black; margin-bottom:10px;">
+
+                <div id="logokuva" class="col col-xs-3 container" style="float:left;">
+                    <img class="img-thumbnail" src="./html/index.html" alt="Logo"  style="width:auto;float:left;border:1px solid black;margin-left:10px;">
+                </div>
+
+                <div id="otsikko" class="col col-xs-6 container" style="text-align:center;">
+                    
+                    
+                    <div style="margin-top:10px">
+                        <b style="text-align:center;font-size:13px;margin:0;">XAMK TILANVARAUS</b>
+                    </div>
+
+                </div>
+
+                <div id="english-button" class="col col-xs-3 container" style="float:left;">
+
+                    <button class="btn btn-default" id="engNappi" style="width:auto;float:right;border:1px solid black;"><b id="nappiteksti" style="font-size:10px;">In English</b></button>
+
+                </div>
+
+            </div>
+        
+        <div class="container" id="subheader" style="width:auto;border:1px solid black;height:50px; text-align:center; font-size:18px;">
+            
+            <div style="margin-top:10px;">
+            <b>Ravintola- ja tilapalvelut</b>
+            </div>
+            
+        </div>
+        
+        <div class="container" id="mainylateksti" style="width:auto;border:1px solid black;height:auto;">
+            
+            <div class="container" id="tekstiotsikko" style="text-align:center;clear:both;font-size:19px;margin-top:10px;">
+                
+                <b>Monipuoliset tilat Mikkelissä</b>
+                
+            </div>
+            
+            <div class="container" id="tekstisisalto" style="text-align:center;clear:both;">
+                
+                <p style="font-size:16px;">Tekstiä tekstiä kaikesta jännästä</p>
+                
+            </div>
+            
+        </div>
+        
+        <div class="container-fluid" id="main-content" style="width:100%; border:1px solid black;float:left;padding-top:5%;padding-bottom:5%;margin-bottom:5%;">
+            
+            <div class="row justify-content-center" style="border:1px solid black;width:100%;padding:0;margin:0;">
+                
+                
+                
+                <div class="col-xs-12" style="float:left;margin:0;padding:0;">
+                    
+                    <div class="col-sm-6 col-xs-6" style="border:1px solid black; max-height:700px; float:left; padding-top:5%;">
+                        
+                        <div class="col-sm-12 col-xs-12" id="sisaltoOtsikko1" style="height:100px; float:left; border:1px solid black; margin:0;padding:0;">
+                                
+                            <h1 style="text-align:center; font-size:22px;">Sisältö 1</h1>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12 col-xs-12" id="sisalto1" style="max-height:600px; float:left; border:1px solid black; margin-top:10px; padding:0; text-align:center;">
+                                
+                            <b style="text-align:center;">Tilan tietoja lyhyesti <br/> Blabla <br/> Blabla <br/> blabla</b>
+                            <br/><br/><br/>
+                            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#lisasisalto1" style="font-size:12px;">Näytä lisää <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                            
+                            <div class="col-xs-12 collapse" id="lisasisalto1" style="float:left;height:auto;">
+                                
+                                <p>Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text<br/><br/><br/></p>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="col-sm-6 col-xs-6" style="border:1px solid black; max-height:700px; float:left; padding-top:5%;">
+                        
+                        <div class="col-sm-12 col-xs-12" id="sisaltoOtsikko2" style="height:100px; float:left; border:1px solid black; margin:0;padding:0;">
+                                
+                            <h1 style="text-align:center; font-size:22px;">Sisältö 2</h1>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12 col-xs-12" id="sisalto2" style="max-height:600px; float:left; border:1px solid black; margin-top:10px; padding:0; text-align:center;">
+                                
+                            <b style="text-align:center;">Tilan tietoja lyhyesti <br/> Blabla <br/> Blabla <br/> blabla</b>
+                            <br/><br/><br/>
+                            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#lisasisalto2" style="font-size:12px;">Näytä lisää <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                            
+                            <div class="col-xs-12 collapse" id="lisasisalto2" style="float:left;height:auto;">
+                                
+                                <p>Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text<br/><br/><br/></p>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                    
+                    
+                
+                
+                <div class="col-xs-12" style="float:left;margin:0;padding:0;">
+                    
+                    <div class="col-sm-6 col-xs-6" style="border:1px solid black; max-height:700px; float:left; margin-top:5%; padding-bottom:5%;">
+                        
+                        <div class="col-sm-12 col-xs-12" id="sisaltoOtsikko3" style="height:100px; float:left; border:1px solid black; margin:0;padding:0;">
+                                
+                            <h1 style="text-align:center; font-size:22px;">Sisältö 3</h1>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12 col-xs-12" id="sisalto3" style="max-height:600px; float:left; border:1px solid black; margin-top:10px; padding:0; text-align:center;">
+                                
+                            <b style="text-align:center;">Tilan tietoja lyhyesti <br/> Blabla <br/> Blabla <br/> blabla</b>
+                            <br/><br/><br/>
+                            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#lisasisalto3" style="font-size:12px;">Näytä lisää <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                            
+                            <div class="col-xs-12 collapse" id="lisasisalto3" style="float:left;height:auto;">
+                                
+                                <p>Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text<br/><br/><br/></p>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-sm-6 col-xs-6" style="border:1px solid black; max-height:700px; float:right; margin-top:5%; padding-bottom:5%;">
+                        
+                        <div class="col-sm-12 col-xs-12" id="sisaltoOtsikko4" style="height:100px; float:left; border:1px solid black; margin:0;padding:0;">
+                                
+                            <h1 style="text-align:center; font-size:22px;">Sisältö 4</h1>
+                            
+                        </div>
+                        
+                        <div class="col-sm-12 col-xs-12" id="sisalto4" style="max-height:600px; float:left; border:1px solid black; margin-top:10px; padding:0; text-align:center;">
+                                
+                            <b style="text-align:center;">Tilan tietoja lyhyesti <br/> Blabla <br/> Blabla <br/> blabla</b>
+                            <br/><br/><br/>
+                            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#lisasisalto4" style="font-size:12px;">Näytä lisää <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                            
+                            <div class="col-xs-12 collapse" id="lisasisalto4" style="float:left;height:auto;">
+                                
+                                <p>Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text Text <br/> Text<br/><br/><br/></p>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                    
+                
+                
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        
+        
+            
+        </div>
+        
+        <div class="container" style="float:left;height:auto;width:100%;background-color:gray;border:1px solid black;padding-bottom:10px;padding-top:10px;background-color:black;">
+            
+            
+            
+            
+            <div id="footervasensivu" style="text-align:center;color:white;width:50%;font-size:18px;float:left;margin-top:5px;">
+                
+                <div style="text-align:center;color:white;width:100%;font-size:18px;float:left;clear:both;">
+                    <b style="border-bottom:2px solid orange; text-align:center;">Yhteystiedot</b>
+                </div>
+                
+                <div id="yhteystiedot" style="float:left;margin-top:5px;width:100%;">
+                    <b style="color:orange;font-size:11px;">myyntipalvelu@xamk.fi</b>
+                    <p style="color:white;font-size:13px;">puh. 0153 556 303</p>
+                </div>
+                
+
+            </div>
+            
+            <div id="footeroikeasivu" style="text-align:center;color:white;width:50%;font-size:18px;float:left;margin-top:5px;border-left: 2px solid white;">
+                
+                <div style="text-align:center;color:white;width:100%;font-size:18px;float:left;clear:both;">
+                    <b style="border-bottom:2px solid orange; text-align:center;">Maksutavat</b>
+                </div>
+                
+                <div id="maksutavat" style="float:right;margin-top:5px;width:100%;">
+                    <b style="color:orange;font-size:11px;text-align:left;">Verkkopankki</b>
+                    <p style="color:white;font-size:13px;">Korttiosto<br/>Lasku<br/>Credit/Debit</p>
+                </div>
+            
+            </div>
+            
+            
+        </div>
+        
+            
+
+        
+        
+        
+        
+        
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
