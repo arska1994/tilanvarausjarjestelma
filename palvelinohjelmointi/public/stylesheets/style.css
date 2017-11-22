@@ -1,0 +1,22 @@
+.sarake-2 {
+  width: 16%;
+  float: left;
+}
+
+.sarake-8 {
+  width: 66%;
+  float: left;
+}
+
+input {
+  display: block;
+  margin-bottom: 1.3em;
+}
+
+ul {
+  display: inline-block;
+}
+
+* {
+  line-height: 1.5em;
+}

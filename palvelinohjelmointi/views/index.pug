@@ -1,0 +1,13 @@
+extends asettelu
+
+block content
+  h1= title
+  
+  if error
+    p Virhe käsiteltäessä pyyntöä.
+  else
+
+  ul
+    each val in data
+      li #[strong !{val.nimi}:] !{val.kuvausteksti} 
+        a(href='/varausjarjestelma/tila/' + val.id) Näytä lisää

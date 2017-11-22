@@ -1,0 +1,33 @@
+extends asettelu
+
+block content
+    h2 Henkilötiedot
+
+    form(method='POST' action='' autocomplete='on')
+        input#etunimi(type='text', placeholder='etunimi' name='etunimi' value=(undefined===asiakas ? '' : asiakas.etunimi))
+        input#sukunimi(type='text', placeholder='sukunimi' name='sukunimi' value=(undefined===asiakas ? '' : asiakas.sukunimi))
+        input#postiosoite(type='text', placeholder='postiosoite' name='postiosoite' value=(undefined===asiakas ? '' : asiakas.postiosoite))
+        input#postinumero(type='text', placeholder='postinumero' name='postinumero' value=(undefined===asiakas ? '' : asiakas.postinumero))
+        input#postitoimipaikka(type='text', placeholder='postitoimipaikka' name='postitoimipaikka' value=(undefined===asiakas ? '' : asiakas.postitoimipaikka))
+        input#puhelinnumero(type='text', placeholder='puhelinnumero' name='puhelinnumero' value=(undefined===asiakas ? '' : asiakas.puhelinnumero))
+        input#sahkoposti(type='email', placeholder='sahkoposti' name='sahkoposti' value=(undefined===asiakas ? '' : asiakas.sahkoposti))
+
+        h2 Varauksen tiedot
+
+        input#kesto(type='number', placeholder='kesto' name='kesto' value=(undefined===varaus ? '' : varaus.kesto))
+        input#paivamaara(type='date', placeholder='' name='paivamaara' value=(undefined===varaus ? '' : varaus.paivamaara))
+        select#maksutapa(type='text' name='maksutapa' value=(undefined===varaus ? '' : varaus.maksutapa))
+            option(value='verkkopankki') verkkopankki
+            option(value='lasku') lasku
+
+        h2 Lisäpalveluvalinnat
+
+        p Ei vielä valittavissa.
+
+        button(type='submit') jatka
+        a(href='/varausjarjestelma/tila/'+valittuTilaId) peruuta
+
+    if errors 
+        ul
+            for error in errors
+                li!= error.msg

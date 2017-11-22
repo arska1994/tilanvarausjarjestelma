@@ -1,0 +1,32 @@
+extends asettelu
+
+block content
+    h1 Tarkista vielä tietosi
+    h2 Henkilötiedot
+
+    form(method='POST' action='' autocomplete='on')
+        input#etunimi(type='text', placeholder='etunimi' name='etunimi' readonly value=(undefined===asiakas ? '' : asiakas.etunimi))
+        input#sukunimi(type='text', placeholder='sukunimi' name='sukunimi' readonly value=(undefined===asiakas ? '' : asiakas.sukunimi))
+        input#postiosoite(type='text', placeholder='postiosoite' name='postiosoite' readonly value=(undefined===asiakas ? '' : asiakas.postiosoite))
+        input#postinumero(type='text', placeholder='postinumero' name='postinumero' readonly value=(undefined===asiakas ? '' : asiakas.postinumero))
+        input#postitoimipaikka(type='text', placeholder='postitoimipaikka' name='postitoimipaikka' readonly value=(undefined===asiakas ? '' : asiakas.postitoimipaikka))
+        input#puhelinnumero(type='text', placeholder='puhelinnumero' name='puhelinnumero' readonly value=(undefined===asiakas ? '' : asiakas.puhelinnumero))
+        input#sahkoposti(type='email', placeholder='sahkoposti' name='sahkoposti' readonly value=(undefined===asiakas ? '' : asiakas.sahkoposti))
+
+        h2 Varauksen tiedot
+
+        input#kesto(type='number', placeholder='kesto' name='kesto' readonly value=(undefined===varaus ? '' : varaus.kesto))
+        input#paivamaara(type='date', placeholder='' name='paivamaara' readonly value=(undefined===varaus ? '' : varaus.paivamaara))
+        input#maksutapa(type='text', placeholder='maksutapa' name='maksutapa' readonly value=(undefined===varaus ? '' : varaus.maksutapa))
+
+        h2 Lisäpalveluvalinnat
+
+        p Ei vielä valittavissa.
+
+        button(type='submit') jatka
+        a(href='/varausjarjestelma/varaus/create/'+valittuTilaId) peruuta
+
+    if errors 
+        ul
+            for error in errors
+                li!= error.msg

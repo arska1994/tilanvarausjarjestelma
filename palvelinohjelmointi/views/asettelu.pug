@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div(class='sisalto')
+      div(class='rivi')
+        div(class='sarake-2')
+          block sidebar
+            ul(class='sivupalkki-navigointi')
+              span Testilinkit
+                hr
+              li 
+                a(href='/varausjarjestelma') Etusivu
+              li 
+                a(href='/varausjarjestelma/tila/1') Näytä tila #1
+              li 
+                a(href='/varausjarjestelma/varaus/create/1') Luo uusi varaus #1              
+              li 
+                a(href='/varausjarjestelma/vahvistus/create/1') Vahvista tiedot #1
+
+            ul(class='sivupalkki-navigointi')
+              span Ylläpidon testilinkit
+                hr
+              li 
+                a(href='/varausjarjestelma/yllapito/kirjautuminen') Kirjautuminen
+              li
+                a(href='/varausjarjestelma/yllapito/etusivu') Etusivu 
+                
+        div(class='sarake-8')
+          block content

@@ -1,0 +1,9 @@
+﻿Käynnistä sovellus ilman muita ominaisuuksia:
+npm start
+
+Käynnistä sovellus ja ota käyttöön loki/debuggaus:
+SET DEBUG=tilanvarausjarjestelma:* & npm start
+
+
+Käynnistä sovellus, ota käyttöön loki/debuggaus ja palvelimen automaattinen uudelleenkäynnistys:
+SET DEBUG=express-locallibrary-tutorial:* & npm run devstart

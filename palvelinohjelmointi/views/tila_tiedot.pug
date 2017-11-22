@@ -1,0 +1,18 @@
+extends asettelu
+
+block content
+    h1= title
+
+    if error
+        p Virhe käsiteltäessä pyyntöä.
+    else
+
+        p #[strong Kuvausteksti:] #{data.kuvausteksti}
+        p #[strong Koko:] #{data.koko}
+        p #[strong Sijainti:] #{data.sijainti}
+        p #[strong Laitteet:] #{data.laitteet}  
+        p #[strong Hinta:] #{data.hinta}
+        p #[strong Saatavuus:] #{data.saatavuus}
+        p #[strong PalveluId:] #{data.palveluId}
+
+        a(href='/varausjarjestelma/varaus/create/'+data.id) Varaa tämä tila

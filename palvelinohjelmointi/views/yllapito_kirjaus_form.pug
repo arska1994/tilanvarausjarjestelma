@@ -1,0 +1,19 @@
+extends asettelu
+
+block content
+    h1 Kirjaudu sisään
+
+    form(method='post' action='' autocomplete='off')
+        input#tunnus(type='text', placeholder='tunnus' name='tunnus' value='' spellcheck='false')
+        input#salasana(type='password', placeholder='salasana' name='salasana' value='' spellcheck='false')
+
+        button(type='submit') Kirjaudu
+
+    if viesti
+        ul
+            li!= viesti
+
+    if errors
+        ul
+            for error in errors
+                li!= error.msg

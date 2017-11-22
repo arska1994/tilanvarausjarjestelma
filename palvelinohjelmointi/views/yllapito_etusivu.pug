@@ -1,0 +1,9 @@
+extends asettelu
+
+block content
+    h1 Tervetuloa, !{nimi}
+    p Täällä ei ole vielä mitään :(
+
+    form(method='post' action='' autocomplete='off')
+        input#uloskirjautuminen(type='hidden' name='uloskirjautuminen')
+        button(type='submit') Kirjaudu ulos
