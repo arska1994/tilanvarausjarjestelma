@@ -1,4 +1,12 @@
 # tilanvarausjarjestelma
-Selaimessa toimiva järjestelmä tilojen selaamiseen, varausten luontiin ja hallintaan.
+Palvelinpään ominaisuuksien ensimmäinen julkaisu.
 
-Projekti toteutetaan kolmen henkilön ryhmätyönä. Meillä on aikataulu ja työnjako.
+Loppukäyttäjän näkymät:
+Etusivulla näkyy yleisluontoisesti tiedot.
+Yksittäisen tilan sivulla näkyy kunkin tilan tarkemmat tiedot.
+Varauksen luomiseen tarkoitettu lomake tarkistetaan ja ollessaan oikein, ohjataan eteenpäin.
+Yhteenvetosivu näyttää varauksen tiedot. Sivun tallenna-nappi tallentaa tiedot tietokantaan.
+
+Ylläpitäjän näkymät: 
+Ylläpitäjälle tarkoittettu kirjautumissivu sisältää lomakkeen.
+Ylläpitäjän etusivulle ohjataan kirjautumisen ollessa oikein. Ylläpitäjän etusivulla kirjaudu ulos -nappi.
